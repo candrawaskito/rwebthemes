@@ -1,6 +1,6 @@
 rwebthemes - Wordpress Themes from Scratch
 ==========================================
 
-Designer : @rahendz
+Designer : @rahendz <br>
 code php : @chanchandrue
 
