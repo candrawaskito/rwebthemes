@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Praktikum Rekayasa Web</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<style type="text/css" media="screen">
+		html,body{padding:0;margin:0;width:100%;height:100%;}
+		body{padding-top:50px;font-family:"Segoe UI","Calibri",helvetica,verdana,arial;line-height: 30px;font-size:14px;color:#555;}
+
+		* {
+			-webkit-transition: all .3s ease-in-out;
+			   -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			     -o-transition: all .3s ease-in-out;
+			        transition: all .3s ease-in-out;
+		}
+
+		/* NAVBAR */
+		.navbar{padding:0;margin:0;border:none;}
+		.navbar > .container > ul{padding:0 20px;margin:0;}
+		.navbar > .container  > ul > li{display: inline-block;}
+		.navbar > .container  > ul > li > a{display:block;}
+		.navbar > .container  > ul > li:hover > a{}
+		.navbar > .container  > ul > li.current-page-item > a{background-color:#080808;color:#FFF;}
+		.navbar > .container  > ul > li.current-page-item:hover > a{pointer-events:none;}
+		.navbar > .container  > form{padding:10px 20px;}
+
+		/* HEADER */
+		header.site-header{width:100%;height:300px;background-image:url('img/header.jpg');background-repeat:no-repeat;background-position:center center;background-size: 100% auto;display:table;background-attachment:fixed;}
+		header.site-header > .container{display:table-cell;vertical-align:bottom;padding-bottom:50px;}
+		header.site-header > .container > h1{color:#FFF;font-weight:normal;font-family:"Segoe UI","Calibri",helvetica,verdana,arial;line-height:150%;padding:0;margin:0;font-style:italic;font-size:40px;text-shadow:0 0 10px rgba(0,0,0,1);}
+
+		/* SIDEBAR */
+		section.sidebar{padding-right:40px;padding-top:20px;}
+		section.sidebar > aside.widget{border-bottom:1px solid #EEE;padding:20px 0;}
+		section.sidebar > aside.widget:last-child{border-bottom:none;}
+		section.sidebar > aside.widget > h3.widget-title{font-weight:normal;text-transform:uppercase;font-size:16px;padding:0;margin:0;padding-bottom:20px;}
+		section.sidebar > aside.widget > ul{padding:0;margin:0;list-style:none;}
+		section.sidebar > aside.widget > ul > li{border-bottom:1px dashed #CCC;}
+		section.sidebar > aside.widget > ul > li:last-child{border-bottom:none;}
+		section.sidebar > aside.widget > ul > li > a{display:block;padding:7px 10px;}
+		section.sidebar > aside.widget > ul > li:hover > a{background-color:#F5F5F5;text-decoration:none;}
+
+		/* CONTENT */
+		section.content{padding-top:20px;}
+		section.content > article.post{padding:20px 0 30px;}
+		section.content > article.post > header.entry-header > h1.entry-title{padding:0;margin:0;font-weight:normal;padding-bottom:20px;}
+		section.content > article.post > header.entry-header > .entry-meta{border-top:1px solid #EEE;border-bottom:1px solid #EEE;padding:0 10px;}
+		section.content > article.post > header.entry-header > .entry-meta > span{padding-right:10px;}
+		section.content > article.post > .entry-content{padding:20px 0;}
+
+		/* FOOTER */
+		footer.site-footer{border-top:1px solid #EEE;margin-top:20px;}
+		footer.site-footer > .site-info{text-align:center;padding:15px 0;font-size:11px;}
+		footer.site-footer > .site-info > a{display:inline-block;}
+	</style>
+</head>
+<body>
+
+	<nav class="row navbar navbar-fixed-top navbar-inverse"><div class="container">
+		<div class="pull-left navbar-header">
+			<a href="#" class="navbar-brand">Praktikum Rekayasa Web</a>
+		</div>
+		<ul class="nav pull-left navbar-nav"><!-- wp_nav_menu starts here -->
+		    <li class="current-page-item"><a href="#" title="">Home</a></li>
+		    <li><a href="#" title="">About</a></li>
+		    <li><a href="#" title="">Blog</a></li>
+		    <li><a href="#" title="">Sample</a></li>
+		</ul>
+		<form class="pull-right col-md-3">
+			<div class="input-group input-group-sm">
+				<input type="text" name="s" placeholder="Search Here" class="form-control" />
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-default">SEARCH</button>
+				</span>
+			</div>
+		</form>
+	</div></nav>
+	
+	<header id="header" class="site-header container">
+		<div class="container">
+			<h1 class="col-md-7">Jawa Ipsum baita cucul saras dolan dangu, geger motong pindhah ngadeg</h1>
+		</div>
+	</header>
+
+	<div class="site-content container">
+		<section class="sidebar col-md-3">
+			<aside class="widget">
+				<h3 class="widget-title">Categories</h3>
+
+				<ul>
+					<li><a href="">Technology</a></li>
+					<li><a href="">Life Style</a></li>
+					<li><a href="">Politics</a></li>
+					<li><a href="">Portofolio</a></li>
+				</ul>
+			</aside>
+			
+			<aside class="widget">
+				<h3 class="widget-title">Meta</h3>
+
+				<ul>
+					<li><a href="">Sign In</a></li>
+					<li><a href="">Entries RSS</a></li>
+					<li><a href="">Comments RSS</a></li>
+					<li><a href="">Wordpress.org</a></li>
+				</ul>
+			</aside>	
+		</section>
+
+		<section class="content col-md-9">	
+			<article class="row post">
+			
+				<header class="entry-header">
+					<h1 class="entry-title"><a href="#">Jawa Ipsum nedhi emah-emah ringgit!</a></h1>
+					<div class="entry-meta">
+						<span class="entry-date">
+							<a href="" rel="bookmark"><span class="glyphicon glyphicon-calendar"></span> <time class="entry-date" datetime="2014-03-20T14:53:43+00:00">March 20, 2014</time></a>&nbsp;
+						</span>
+						<span class="byline">
+							<span class="author vcard"><a class="url fn n" href="" rel="author"><span class="glyphicon glyphicon-user"></span> Admin</a></span>&nbsp;
+						</span>
+						<span class="comments-link">
+							<a href="http://wpapps/wpdev/?p=41#respond" title="Comment on oke"><span class="glyphicon glyphicon-comment"></span> Leave a Comment</a>&nbsp;
+						</span>
+						<span class="edit-link">
+							<a class="post-edit-link" href="http://wpapps/wpdev/wp-admin/post.php?post=41&amp;action=edit"><span class="glyphicon glyphicon-edit"></span> Edit Post</a>
+						</span>
+					</div>
+				</header>
+
+				<div class="entry-content">
+					
+					<p>Jawa Ipsum nedhi emah-emah ringgit jawah sae, leres; kengken kemu; nyukani ajrih ngundang. Manah ijem tapihan putu weteng pamanah tebih nyukani, kajang nanem. Tiapukan, putu rambut pupu; sendhok tanem bojo. Mbekta pados sumerep, nyukani m&eacute;ga awis sekar tuwi katur.</p>
+
+					<p>Dhateng ageng tiyang dhateng, raos mantun kinten. Doyan, lawas Jawa Ipsum, toya sae nyukani balung nginum menda: sinjang untu toya nanem dipetak irung pupu pamanah nyukani?</p>
+	
+				</div>
+
+				<footer class="entry-footer">
+					<span class="entry-more"><a href="" class="btn btn-primary">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a></span>
+				</footer>
+
+			</article>
+
+			<article class="row post">
+			
+				<header class="entry-header">
+					<h1 class="entry-title"><a href="#">Jawa Ipsum nedhi emah-emah ringgit!</a></h1>
+					<div class="entry-meta">
+						<span class="entry-date">
+							<a href="" rel="bookmark"><span class="glyphicon glyphicon-calendar"></span> <time class="entry-date" datetime="2014-03-20T14:53:43+00:00">March 20, 2014</time></a>&nbsp;
+						</span>
+						<span class="byline">
+							<span class="author vcard"><a class="url fn n" href="" rel="author"><span class="glyphicon glyphicon-user"></span> Admin</a></span>&nbsp;
+						</span>
+						<span class="comments-link">
+							<a href="http://wpapps/wpdev/?p=41#respond" title="Comment on oke"><span class="glyphicon glyphicon-comment"></span> Leave a Comment</a>&nbsp;
+						</span>
+						<span class="edit-link">
+							<a class="post-edit-link" href="http://wpapps/wpdev/wp-admin/post.php?post=41&amp;action=edit"><span class="glyphicon glyphicon-edit"></span> Edit Post</a>
+						</span>
+					</div>
+				</header>
+
+				<div class="entry-content">
+					
+					<p>Jawa Ipsum nedhi emah-emah ringgit jawah sae, leres; kengken kemu; nyukani ajrih ngundang. Manah ijem tapihan putu weteng pamanah tebih nyukani, kajang nanem. Tiapukan, putu rambut pupu; sendhok tanem bojo. Mbekta pados sumerep, nyukani m&eacute;ga awis sekar tuwi katur.</p>
+
+					<p>Dhateng ageng tiyang dhateng, raos mantun kinten. Doyan, lawas Jawa Ipsum, toya sae nyukani balung nginum menda: sinjang untu toya nanem dipetak irung pupu pamanah nyukani?</p>
+	
+				</div>
+
+				<footer class="entry-footer">
+					<span class="entry-more"><a href="" class="btn btn-primary">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a></span>
+				</footer>
+
+			</article>
+		</section>
+	</div>
+
+	<footer id="colophon" class="site-footer container" role="contentinfo">
+		<div class="site-info">
+			Proudly powered by <a href="http://ksweb.tif.uad.ac.id/">KSWEB-UAD</a>
+		</div><!-- .site-info -->
+	</footer>
+
+</body>
+</html>
